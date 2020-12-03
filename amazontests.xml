@@ -1,0 +1,19 @@
+<suite name="CheckAmazonTests" verbose="1">
+
+    <test name="AmazonTests">
+        <classes>
+            <class name="pageobject.tests.AmazonTestSignInFirefox">
+                <methods>
+                    <include name="authorisationOnAmazonSite" />
+                </methods>
+            </class>
+            <class name="pageobject.tests.AmazonTestsChrome">
+                <methods>
+                    <include name="chooseNeededProduct" />
+                    <include name="addToCartNeededProduct" />
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
