@@ -12,6 +12,7 @@ public class AmazonTestSignInFirefox extends BaseTestFirefox{
 
     @Test()
     public void authorisationOnAmazonSite() {
+        getBasePageFirefox().implicitWait(60);
         getHomePageFirefox().clickOnAccountAndListsChoice();
         getSignInPageFirefox().inputEmailForAuthorization(INPUT_KEYWORDS);
         getSignInPageFirefox().clickButtonContinueAuthorization();

@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+import pageobject.pages.BasePageFirefox;
 import pageobject.pages.HomePageFirefox;
 import pageobject.pages.SignInPageFirefox;
 
@@ -42,6 +43,10 @@ public class BaseTestFirefox {
 
     public WebDriver getFoxDriver() {
         return foxDriver;
+    }
+
+    public BasePageFirefox getBasePageFirefox() {
+        return new BasePageFirefox(getFoxDriver());
     }
 
     public HomePageFirefox getHomePageFirefox() {
